@@ -1,0 +1,4 @@
+gitlab_omnibus:
+  version: 8.16.0
+  extra_pkgs:
+    - apt-transport-https

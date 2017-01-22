@@ -1,0 +1,31 @@
+# vim: ft=yaml
+---
+driver:
+  name: vagrant
+  customize:
+    memory: 1024
+  network:
+    - ["private_network", { ip: "192.168.33.33" }]
+
+provisioner:
+  name: salt_solo
+  salt_install: bootstrap
+  salt_bootstrap_options: -P
+  formula: gitlab_omnibus
+  pillars-from-files:
+    gitlab_omnibus.sls: pillar.example
+  pillars:
+    top.sls:
+      base:
+        "*":
+          - gitlab_omnibus
+  state_top:
+    base:
+      "*":
+        - gitlab_omnibus
+
+platforms:
+  - name: ubuntu-16.10
+
+suites:
+  - name: default
