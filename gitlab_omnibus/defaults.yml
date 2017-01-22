@@ -2,6 +2,6 @@
 # Defaults for gitlab_omnibus
 
 gitlab_omnibus:
-  version: gitlab-ce_8.16.0
+  version: 8.16.0
   extra_pkgs:
     - apt-transport-https
