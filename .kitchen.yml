@@ -25,7 +25,7 @@ provisioner:
         - gitlab_omnibus
 
 platforms:
-  - name: ubuntu-16.10
+  - name: ubuntu-16.04
 
 suites:
   - name: default

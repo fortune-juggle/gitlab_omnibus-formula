@@ -8,9 +8,6 @@ describe "gitlab-runsvdir Service" do
      it { should be_running   }
     end
 
-  describe package('gitlab-ee') do
-     it { should be_installed }
-    end
   describe package('apt-transport-https') do
      it { should be_installed }
     end

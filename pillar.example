@@ -1,4 +1,5 @@
 gitlab_omnibus:
-  version: 8.16.0
+  enterprise_edition: false # true or false if true change version 8.16.2-ee.0
+  version: 8.16.2-ce.0
   extra_pkgs:
     - apt-transport-https
