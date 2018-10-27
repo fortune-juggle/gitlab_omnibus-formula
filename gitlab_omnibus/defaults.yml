@@ -1,0 +1,10 @@
+# vim: ft=yaml
+# Defaults for gitlab_omnibus
+
+gitlab_omnibus:
+  enterprise_edition: false
+  version: 11.3.5-ce.0
+  extra_pkgs:
+    - apt-transport-https
+  nodename: test-gitlab.example.com
+
